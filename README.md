@@ -2,6 +2,6 @@
 
 Owner: Ethan
 
-Scrum Leader: Laisey
+Scrum Leader: Lainey
 
-Developer: Skyler
+The Best Developer In the Universe: Skyler

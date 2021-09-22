@@ -1,3 +1,7 @@
 # ELSe-repo
 
-no
+Owner: Ethan
+
+Scrum Leader: Laisey
+
+Developer: Skyler

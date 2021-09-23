@@ -16,7 +16,7 @@ hamsters
 birds - parrots
 
 Mammals:
-chincila
+chinchilla
 whales
 marmoset monkeys
 
@@ -26,8 +26,8 @@ newts
 salamander
 
 marine life:
-blob fish
+blobfish
 angular fish
-aligator gar
+alligator gar
 hammerhead shark
 adorabilis

@@ -1,3 +1,67 @@
 body#home{
     background-color: #8fd1d1;
 }
+div#title{
+    background-color: black;
+    color: white;
+    width: 1200px;
+    height: 65px;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+}
+#head{
+    font-family: monospace;
+    font-size: 38pt;
+}
+#team-logo{
+    width: 275px; 
+    height: 120px;
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    z-index: -1;
+}
+#content-box{
+    border-radius: 10px;
+    width: 62.7%;
+    height: 75%;
+    background-color: rgba(173, 169, 169, 0.466);
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#navigation{
+    border-radius: 6px;
+    list-style-type: none;
+    margin-left: 1.5%;
+    background-color: #262726;
+    color: white;
+    width: 268px;
+    padding: 5px;
+}
+#current{
+    display: block;
+    color: #8fd1d1;
+    text-decoration: none;
+    font-size: 16pt;
+}
+#nav{
+    color: white;
+    font-size: 20pt;
+}
+#nav-link{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 16pt;
+}
+#nav-link:hover{
+    display: block;
+    color: #8fd1d1;
+    text-decoration: none;
+    font-size: 16pt;
+    background-color: gray;
+}

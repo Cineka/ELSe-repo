@@ -43,6 +43,16 @@ div#title{
     padding: 5px;
     padding-bottom: 10px;
 }
+#links{
+    border-radius: 6px;
+    list-style-type: none;
+    margin-left: 1.5%;
+    background-color: #262726;
+    color: #ffffff;
+    width: 268px;
+    padding: 5px;
+    padding-bottom: 10px;
+}
 #current{
     display: block;
     color: #8fd1d1;

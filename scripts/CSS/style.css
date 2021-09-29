@@ -32,6 +32,16 @@ div#title{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+#content-box-sources{
+    border-radius: 10px;
+    width: 62.7%;
+    height: 75%;
+    background-color: #ada9a977;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     overflow-y: scroll;
 }
 #navigation{

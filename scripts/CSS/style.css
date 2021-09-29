@@ -84,6 +84,11 @@ div#title{
     font-size: 30pt;
     color: #202020;
 }
+#about-header{
+    font-size: 30pt;
+    color: #202020;
+    text-decoration: underline;
+}
 #animal-image{
     width: 325px;
     height: auto;
@@ -93,4 +98,24 @@ div#title{
     padding: 10px;
     float: top;
     text-align: top;
+}
+.link-button{
+    width: 75%;
+    font-size: 12pt;
+    font-family: 'Lucida Sans';
+    font-weight: 900;
+    color: #ffffff;
+    background-color: #727272;
+    border-color: #949393;
+    border-radius: 5px;
+}
+.link-button:hover{
+    width: 75%;
+    font-size: 12pt;
+    font-family: 'Lucida Sans';
+    font-weight: 900;
+    color: #238bec;
+    background-color: #3d3d3d;
+    border-color: #949393;
+    border-radius: 5px;
 }

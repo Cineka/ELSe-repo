@@ -84,6 +84,11 @@ div#title{
     font-size: 30pt;
     color: #202020;
 }
+#about-header{
+    font-size: 30pt;
+    color: #202020;
+    text-decoration: underline;
+}
 #animal-image{
     width: 325px;
     height: auto;

@@ -34,6 +34,17 @@ div#title{
     top: 50%;
     transform: translate(-50%, -17%);
 }
+#content-box-mammals{
+    border-radius: 10px;
+    width: 62.7%;
+    height: auto;
+    padding-top: 10px;
+    background-color: #ada9a977;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -17%);
+}
 #content-box{
     border-radius: 10px;
     width: 62.7%;

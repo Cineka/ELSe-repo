@@ -94,3 +94,13 @@ div#title{
     float: top;
     text-align: top;
 }
+.link-button{
+    width: 75%;
+    font-size: 12pt;
+    font-family: 'Lucida Sans';
+    font-weight: 900;
+    color: #ffffff;
+    background-color: #727272;
+    border-color: #949393;
+    border-radius: 5px;
+}

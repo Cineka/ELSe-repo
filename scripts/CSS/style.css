@@ -171,7 +171,6 @@ div#title{
       height: 150px;
   }
   #about-table{
-      margin-left: auto;
-      margin-right: auto;
-  }
-  
+    margin-left: auto;
+    margin-right: auto;
+}

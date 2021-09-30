@@ -67,6 +67,17 @@ div#title{
     top: 50%;
     transform: translate(-50%, -17%);
 }
+#content-box-lainey{
+    border-radius: 10px;
+    width: 62.7%;
+    height: auto;
+    padding-top: 10px;
+    background-color: #ada9a977;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -14%);
+}
 #content-box{
     border-radius: 10px;
     width: 62.7%;
@@ -148,6 +159,10 @@ div#title{
 #animal-image{
     width: 325px;
     height: auto;
+    border: 5px solid black;
+}
+#video{
+    border:5px solid black;
 }
 #animal-ranking{
     font-size: 18pt;

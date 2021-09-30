@@ -150,6 +150,7 @@ div#title{
 #content-header{
     font-size: 30pt;
     color: #202020;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #about-header{
     font-size: 30pt;
@@ -165,10 +166,11 @@ div#title{
     border:5px solid black;
 }
 #animal-ranking{
-    font-size: 18pt;
+    font-size: 16pt;
     padding: 10px;
     float: top;
     text-align: top;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 .link-button{
     width: 75%;

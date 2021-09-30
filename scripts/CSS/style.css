@@ -182,11 +182,11 @@ div#title{
     margin: auto;
     text-align: center;
     font-family: arial;
-    border: black;
+    border: #000000;
   }
   
   #cardinfo {
-    color: grey;
+    color: #808080;
     font-size: 18px;
   }
   
@@ -195,7 +195,7 @@ div#title{
     outline: 0;
     display: inline-block;
     padding: 8px;
-    color: white;
+    color: #ffffff;
     background-color: #000;
     text-align: center;
     cursor: pointer;
@@ -206,7 +206,7 @@ div#title{
   #a {
     text-decoration: none;
     font-size: 22px;
-    color: black;
+    color: #000000;
   }
   
   #button:hover, #a:hover {
@@ -218,4 +218,14 @@ div#title{
   #about-table{
     margin-left: auto;
     margin-right: auto;
+}
+.sorce-link{
+    text-decoration: none;
+    font-family: georgia;
+    color: #000000;
+}
+.sorce-link:hover{
+    text-decoration: underline #1c0cfa;
+    font-family: georgia;
+    color: #c421bc;
 }

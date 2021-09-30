@@ -172,6 +172,13 @@ div#title{
     text-align: top;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
+#animal-ranking{
+    font-size: 16pt;
+    padding: 10px;
+    float: top;
+    text-align: top;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
 .link-button{
     width: 75%;
     font-size: 12pt;

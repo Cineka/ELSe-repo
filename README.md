@@ -32,4 +32,18 @@ aligator gar,
 hammerhead shark,
 adorabilis
 
-links for additional info on personal page:
+personal page links (ethan):
+
+Penguin = https://www.worldwildlife.org/species/penguin
+
+Frilled Lizard = https://www.nationalgeographic.com/animals/reptiles/facts/frilled-lizard
+
+Fer-de-lance = https://www.britannica.com/animal/fer-de-lance-snake-genus
+
+personal page links (lainey):
+
+Otters = 
+
+Orange Tabby Cats = 
+
+Geckos = 

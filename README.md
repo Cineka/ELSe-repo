@@ -31,3 +31,5 @@ angular fish,
 aligator gar,
 hammerhead shark,
 adorabilis
+
+links for additional info on personal page:

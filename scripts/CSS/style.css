@@ -243,12 +243,12 @@ div#title{
     margin-left: auto;
     margin-right: auto;
 }
-.sorce-link{
+.source-link{
     text-decoration: none;
     font-family: georgia;
     color: #000000;
 }
-.sorce-link:hover{
+.source-link:hover{
     font-family: georgia;
     color: #c421bc;
 }

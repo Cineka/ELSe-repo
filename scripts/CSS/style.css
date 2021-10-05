@@ -32,6 +32,15 @@
 #overlay-whale{
     display: none;
 }
+#overlay-dog{
+    display: none;
+}
+#overlay-parrotlet{
+    display: none;
+}
+#overlay-cat{
+    display: none;
+}
 #button-left{
     margin-left: auto;
     margin-right: auto;

@@ -4,35 +4,35 @@
         <link rel="stylesheet" href="scripts/CSS/style.css">
     </head>
     <body id="home">
-        <div id="overlay-chin">
-            <img class="mySlides-chin" src="images/adorabilis.png" style="height:75%">
-            <img class="mySlides-chin" src="images/cat.png" style="height:75%">
-            <img class="mySlides-chin" src="images/catloffin.jpg" style="height:75%">
-            <img class="mySlides-chin" src="images/frilledlizard.jpg" style="height:75%">
+        <div id="overlay-dog">
+            <img class="mySlides-dog" src="images/adorabilis.png" style="height:75%">
+            <img class="mySlides-dog" src="images/cat.png" style="height:75%">
+            <img class="mySlides-dog" src="images/catloffin.jpg" style="height:75%">
+            <img class="mySlides-dog" src="images/frilledlizard.jpg" style="height:75%">
             
-            <button class="button-left" onclick="plusDivsChin(-1)">&#10094;</button>
-            <button class="button-right" onclick="plusDivsChin(1)">&#10095;</button>
-            <button onclick="offChin()">X</button>
+            <button class="button-left" onclick="plusDivsDog(-1)">&#10094;</button>
+            <button class="button-right" onclick="plusDivsDog(1)">&#10095;</button>
+            <button onclick="offDog()">X</button>
         </div>
-        <div id="overlay-monkey">
-            <img class="mySlides-monkey" src="images/adorabilis.png" style="height:75%">
-            <img class="mySlides-monkey" src="images/cat.png" style="height:75%">
-            <img class="mySlides-monkey" src="images/catloffin.jpg" style="height:75%">
-            <img class="mySlides-monkey" src="images/frilledlizard.jpg" style="height:75%">
+        <div id="overlay-parrotlet">
+            <img class="mySlides-parrotlet" src="images/adorabilis.png" style="height:75%">
+            <img class="mySlides-parrotlet" src="images/cat.png" style="height:75%">
+            <img class="mySlides-parrotlet" src="images/catloffin.jpg" style="height:75%">
+            <img class="mySlides-parrotlet" src="images/frilledlizard.jpg" style="height:75%">
             
-            <button class="button-left" onclick="plusDivsMonkey(-1)">&#10094;</button>
-            <button class="button-right" onclick="plusDivsMonkey(1)">&#10095;</button>
-            <button onclick="offMonkey()">X</button>
+            <button class="button-left" onclick="plusDivsParrotlet(-1)">&#10094;</button>
+            <button class="button-right" onclick="plusDivsParrotlet(1)">&#10095;</button>
+            <button onclick="offParrotlet()">X</button>
         </div>
-        <div id="overlay-whale">
-            <img class="mySlides-whale" src="images/adorabilis.png" style="height:75%">
-            <img class="mySlides-whale" src="images/cat.png" style="height:75%">
-            <img class="mySlides-whale" src="images/catloffin.jpg" style="height:75%">
-            <img class="mySlides-whale" src="images/frilledlizard.jpg" style="height:75%">
+        <div id="overlay-cat">
+            <img class="mySlides-cat" src="images/adorabilis.png" style="height:75%">
+            <img class="mySlides-cat" src="images/cat.png" style="height:75%">
+            <img class="mySlides-cat" src="images/catloffin.jpg" style="height:75%">
+            <img class="mySlides-cat" src="images/frilledlizard.jpg" style="height:75%">
             
-            <button class="button-left" onclick="plusDivsWhale(-1)">&#10094;</button>
-            <button class="button-right" onclick="plusDivsWhale(1)">&#10095;</button>
-            <button onclick="offWhale()">X</button>
+            <button class="button-left" onclick="plusDivsCat(-1)">&#10094;</button>
+            <button class="button-right" onclick="plusDivsCat(1)">&#10095;</button>
+            <button onclick="offCat()">X</button>
         </div>
         <img src="images/teamlogo.jpg" id="team-logo">
         <div id="title">
@@ -74,7 +74,7 @@
                     <th colspan="2" id="content-header">Rank #1: Golden Retriever <br><br></th>
                 </tr>
                 <tr>
-                    <td><img src="images/dog.png" id="animal-image"></td>
+                    <td><img src="images/dog.png" id="animal-image"><button onclick="onDog()">More Images</button></td>
                     <td id="animal-ranking">Golden Retrievers are good house pets. They work well with kids, they are easy to train, and are playful. They are also 
                         very fluffy and are good cuddle buddies! The only downside is their thicker double coat that you need to groom.
                     </td>
@@ -87,7 +87,7 @@
                     <th colspan="2" id="content-header">Rank #2: Parrotlet <br><br></th>
                 </tr>
                 <tr>
-                    <td><img src="images/parrotlet.png" id="animal-image"></td>
+                    <td><img src="images/parrotlet.png" id="animal-image"><button onclick="onParrotlet()">More Images</button></td>
                     <td id="animal-ranking">Parrotlets are the smaller (and cuter) version of parrots! They are affectionate, good in pairs or groups, and they are spirited! 
                         The only downside is they can be aggressive if not handled when they are young and they have a strong bite.
                     </td>
@@ -100,7 +100,7 @@
                     <th colspan="2" id="content-header">Rank #3: Calico <br><br></th>
                 </tr>
                 <tr>
-                    <td><img src="images/cat.png" id="animal-image"></td>
+                    <td><img src="images/cat.png" id="animal-image"><button onclick="onCat()">More Images</button></td>
                     <td id="animal-ranking">Calico cats are considered "money cats" in some cultures because of their rarity. They are not actually a breed, but rather are the 
                         classification of ther orange, black, and white fur pattern. They are spunky and independent but can also be lovable at times. They are also all female 
                         because they can't be bred.
@@ -110,5 +110,131 @@
                 <tr><td colspan="2" id="animal-ranking"> </td></tr>
             </table>
         </div>
+        <script>
+            function onDog(){
+                document.getElementById("overlay-dog").style.backgroundColor = "rgba(0,0,0,0.5)";
+                document.getElementById("overlay-dog").style.width = "100%";
+                document.getElementById("overlay-dog").style.height = "60%";
+                document.getElementById("overlay-dog").style.position = "fixed";
+                document.getElementById("overlay-dog").style.top = "100px";
+                document.getElementById("overlay-dog").style.zIndex = "2";
+                document.getElementById("overlay-dog").style.display = "block";
+
+                document.getElementById("navigation").style.position= "absolute";
+                document.getElementById("navigation").style.top= "154px";
+
+                document.getElementById("links").style.position= "absolute";
+                document.getElementById("links").style.top= "495px";
+            }
+            function offDog(){
+                document.getElementById("overlay-dog").style.display = "none";
+
+                document.getElementById("navigation").style.position= "static";
+                document.getElementById("navigation").style.top= "0";
+
+                document.getElementById("links").style.position= "static";
+                document.getElementById("links").style.top= "0";
+            }
+            var slideIndex = 1;
+            showDivsDog(slideIndex);
+
+            function plusDivsDog(n) {
+                showDivsDog(slideIndex += n);
+            }
+
+            function showDivsDog(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides-dog");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+            }
+
+
+            function onParrotlet(){
+                document.getElementById("overlay-parrotlet").style.backgroundColor = "rgba(0,0,0,0.5)";
+                document.getElementById("overlay-parrotlet").style.width = "100%";
+                document.getElementById("overlay-parrotlet").style.height = "60%";
+                document.getElementById("overlay-parrotlet").style.position = "fixed";
+                document.getElementById("overlay-parrotlet").style.top = "100px";
+                document.getElementById("overlay-parrotlet").style.zIndex = "2";
+                document.getElementById("overlay-parrotlet").style.display = "block";
+
+                document.getElementById("navigation").style.position= "absolute";
+                document.getElementById("navigation").style.top= "154px";
+
+                document.getElementById("links").style.position= "absolute";
+                document.getElementById("links").style.top= "495px";
+            }
+            function offParrotlet(){
+                document.getElementById("overlay-parrotlet").style.display = "none";
+
+                document.getElementById("navigation").style.position= "static";
+                document.getElementById("navigation").style.top= "0";
+
+                document.getElementById("links").style.position= "static";
+                document.getElementById("links").style.top= "0";
+            }
+            showDivsParrotlet(slideIndex);
+
+            function plusDivsParrotlet(n) {
+                showDivsParrotlet(slideIndex += n);
+            }
+
+            function showDivsParrotlet(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides-parrotlet");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+            }
+
+            function onCat(){
+                document.getElementById("overlay-cat").style.backgroundColor = "rgba(0,0,0,0.5)";
+                document.getElementById("overlay-cat").style.width = "100%";
+                document.getElementById("overlay-cat").style.height = "60%";
+                document.getElementById("overlay-cat").style.position = "fixed";
+                document.getElementById("overlay-cat").style.top = "100px";
+                document.getElementById("overlay-cat").style.zIndex = "2";
+                document.getElementById("overlay-cat").style.display = "block";
+
+                document.getElementById("navigation").style.position= "absolute";
+                document.getElementById("navigation").style.top= "154px";
+
+                document.getElementById("links").style.position= "absolute";
+                document.getElementById("links").style.top= "495px";
+            }
+            function offCat(){
+                document.getElementById("overlay-cat").style.display = "none";
+
+                document.getElementById("navigation").style.position= "static";
+                document.getElementById("navigation").style.top= "0";
+
+                document.getElementById("links").style.position= "static";
+                document.getElementById("links").style.top= "0";
+            }
+            showDivsCat(slideIndex);
+
+            function plusDivsCat(n) {
+                showDivsCat(slideIndex += n);
+            }
+
+            function showDivsCat(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides-cat");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+            }
+        </script>
     </body>
 </html>

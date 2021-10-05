@@ -20,6 +20,9 @@
 #overlay-dragon{
     display: none;
 }
+#overlay-snake{
+    display: none;
+}
 #button-left{
     margin-left: auto;
     margin-right: auto;

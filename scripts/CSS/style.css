@@ -1,3 +1,27 @@
+.mySlides {
+    display:none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#overlay-adorabilis{
+    display: none;
+}
+#overlay-shark{
+    display: none;
+}
+#overlay-blob{
+    display: none;
+}
+#button-left{
+    margin-left: auto;
+    margin-right: auto;
+}
+#button-right{
+    margin-left: auto;
+    margin-right: auto;
+}
 body#home{
     background-color: #8fd1d1;
 }

@@ -4,6 +4,36 @@
         <link rel="stylesheet" href="scripts/CSS/style.css">
     </head>
     <body id="home">
+        <div id="overlay-chin">
+            <img class="mySlides-chin" src="images/adorabilis.png" style="height:75%">
+            <img class="mySlides-chin" src="images/cat.png" style="height:75%">
+            <img class="mySlides-chin" src="images/catloffin.jpg" style="height:75%">
+            <img class="mySlides-chin" src="images/frilledlizard.jpg" style="height:75%">
+            
+            <button class="button-left" onclick="plusDivsChin(-1)">&#10094;</button>
+            <button class="button-right" onclick="plusDivsChin(1)">&#10095;</button>
+            <button onclick="offChin()">X</button>
+        </div>
+        <div id="overlay-monkey">
+            <img class="mySlides-monkey" src="images/adorabilis.png" style="height:75%">
+            <img class="mySlides-monkey" src="images/cat.png" style="height:75%">
+            <img class="mySlides-monkey" src="images/catloffin.jpg" style="height:75%">
+            <img class="mySlides-monkey" src="images/frilledlizard.jpg" style="height:75%">
+            
+            <button class="button-left" onclick="plusDivsMonkey(-1)">&#10094;</button>
+            <button class="button-right" onclick="plusDivsMonkey(1)">&#10095;</button>
+            <button onclick="offMonkey()">X</button>
+        </div>
+        <div id="overlay-whale">
+            <img class="mySlides-whale" src="images/adorabilis.png" style="height:75%">
+            <img class="mySlides-whale" src="images/cat.png" style="height:75%">
+            <img class="mySlides-whale" src="images/catloffin.jpg" style="height:75%">
+            <img class="mySlides-whale" src="images/frilledlizard.jpg" style="height:75%">
+            
+            <button class="button-left" onclick="plusDivsWhale(-1)">&#10094;</button>
+            <button class="button-right" onclick="plusDivsWhale(1)">&#10095;</button>
+            <button onclick="offWhale()">X</button>
+        </div>
         <img src="images/teamlogo.jpg" id="team-logo">
         <div id="title">
            <center><h1 id="head">Mammals</h1></center>
@@ -45,7 +75,7 @@
                     <th colspan="2" id="content-header">Rank #1: Chinchilla <br><br></th>
                 </tr>
                 <tr>
-                    <td><img src="images/chinchilla.jpg" id="animal-image"></td>
+                    <td><img src="images/chinchilla.jpg" id="animal-image"><button onclick="onChin()">More Images</button></td>
                     <td id="animal-ranking">Chinchillas are smaller mammals, sitting at a length of 23-28cm. They have soft, silky fur and are very socialable. 
                         They are also very intelligent. However, they cannot survive in temps higher than 80 degrees Fahrenheit and are noctural creatures.
                     </td>
@@ -58,7 +88,7 @@
                     <th colspan="2" id="content-header">Rank #2: Marmoset Monkey <br><br></th>
                 </tr>
                 <tr>
-                    <td><img src="images/monkey.png" id="animal-image"></td>
+                    <td><img src="images/monkey.png" id="animal-image"><button onclick="onMonkey()">More Images</button></td>
                     <td id="animal-ranking">Marmoset monkeys are the very small, ranging in length from 12 to 16 cm. They live in the treetops and many live in hot rainforests. 
                         They also love to eat sap from trees and mostly give birth to twins each time. They are also considered the most primitive monkey and are used for 
                         research studies a lot.
@@ -72,7 +102,7 @@
                     <th colspan="2" id="content-header">Rank #3: Blue Whale <br><br></th>
                 </tr>
                 <tr>
-                    <td><img src="images/whale.png" id="animal-image"></td>
+                    <td><img src="images/whale.png" id="animal-image"><button onclick="onWhale()">More Images</button></td>
                     <td id="animal-ranking"> Blue whales are the largest species of whale and are found all over the planet. They follow seasonal migrations and are carnivores.
                         Despite this fact, they really only eat krill. They are also known to be very loud.
                     </td>
@@ -81,5 +111,131 @@
                 <tr><td colspan="2" id="animal-ranking"> </td></tr>
             </table>
         </div>
+        <script>
+            function onChin(){
+                document.getElementById("overlay-chin").style.backgroundColor = "rgba(0,0,0,0.5)";
+                document.getElementById("overlay-chin").style.width = "100%";
+                document.getElementById("overlay-chin").style.height = "60%";
+                document.getElementById("overlay-chin").style.position = "fixed";
+                document.getElementById("overlay-chin").style.top = "100px";
+                document.getElementById("overlay-chin").style.zIndex = "2";
+                document.getElementById("overlay-chin").style.display = "block";
+
+                document.getElementById("navigation").style.position= "absolute";
+                document.getElementById("navigation").style.top= "154px";
+
+                document.getElementById("links").style.position= "absolute";
+                document.getElementById("links").style.top= "495px";
+            }
+            function offChin(){
+                document.getElementById("overlay-chin").style.display = "none";
+
+                document.getElementById("navigation").style.position= "static";
+                document.getElementById("navigation").style.top= "0";
+
+                document.getElementById("links").style.position= "static";
+                document.getElementById("links").style.top= "0";
+            }
+            var slideIndex = 1;
+            showDivsChin(slideIndex);
+
+            function plusDivsChin(n) {
+                showDivsChin(slideIndex += n);
+            }
+
+            function showDivsChin(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides-chin");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+            }
+
+
+            function onMonkey(){
+                document.getElementById("overlay-monkey").style.backgroundColor = "rgba(0,0,0,0.5)";
+                document.getElementById("overlay-monkey").style.width = "100%";
+                document.getElementById("overlay-monkey").style.height = "60%";
+                document.getElementById("overlay-monkey").style.position = "fixed";
+                document.getElementById("overlay-monkey").style.top = "100px";
+                document.getElementById("overlay-monkey").style.zIndex = "2";
+                document.getElementById("overlay-monkey").style.display = "block";
+
+                document.getElementById("navigation").style.position= "absolute";
+                document.getElementById("navigation").style.top= "154px";
+
+                document.getElementById("links").style.position= "absolute";
+                document.getElementById("links").style.top= "495px";
+            }
+            function offMonkey(){
+                document.getElementById("overlay-monkey").style.display = "none";
+
+                document.getElementById("navigation").style.position= "static";
+                document.getElementById("navigation").style.top= "0";
+
+                document.getElementById("links").style.position= "static";
+                document.getElementById("links").style.top= "0";
+            }
+            showDivsMonkey(slideIndex);
+
+            function plusDivsMonkey(n) {
+                showDivsMonkey(slideIndex += n);
+            }
+
+            function showDivsMonkey(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides-monkey");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+            }
+
+            function onWhale(){
+                document.getElementById("overlay-whale").style.backgroundColor = "rgba(0,0,0,0.5)";
+                document.getElementById("overlay-whale").style.width = "100%";
+                document.getElementById("overlay-whale").style.height = "60%";
+                document.getElementById("overlay-whale").style.position = "fixed";
+                document.getElementById("overlay-whale").style.top = "100px";
+                document.getElementById("overlay-whale").style.zIndex = "2";
+                document.getElementById("overlay-whale").style.display = "block";
+
+                document.getElementById("navigation").style.position= "absolute";
+                document.getElementById("navigation").style.top= "154px";
+
+                document.getElementById("links").style.position= "absolute";
+                document.getElementById("links").style.top= "495px";
+            }
+            function offWhale(){
+                document.getElementById("overlay-whale").style.display = "none";
+
+                document.getElementById("navigation").style.position= "static";
+                document.getElementById("navigation").style.top= "0";
+
+                document.getElementById("links").style.position= "static";
+                document.getElementById("links").style.top= "0";
+            }
+            showDivsWhale(slideIndex);
+
+            function plusDivsWhale(n) {
+                showDivsWhale(slideIndex += n);
+            }
+
+            function showDivsWhale(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides-whale");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+            }
+        </script>
     </body>
 </html>

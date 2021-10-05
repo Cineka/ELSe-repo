@@ -23,6 +23,15 @@
 #overlay-snake{
     display: none;
 }
+#overlay-chin{
+    display: none;
+}
+#overlay-monkey{
+    display: none;
+}
+#overlay-snake{
+    display: none;
+}
 #button-left{
     margin-left: auto;
     margin-right: auto;

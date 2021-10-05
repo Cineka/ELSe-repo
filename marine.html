@@ -4,15 +4,37 @@
         <link rel="stylesheet" href="scripts/CSS/style.css">
     </head>
     <body id="home">
-        <div id="overlay">
-            <img class="mySlides" src="images/adorabilis.png" style="height:75%">
-            <img class="mySlides" src="images/cat.png" style="height:75%">
-            <img class="mySlides" src="images/catloffin.jpg" style="height:75%">
-            <img class="mySlides" src="images/frilledlizard.jpg" style="height:75%">
+        <div id="overlay-adorabilis">
+            <img class="mySlides-adorabilis" src="images/adorabilis.png" style="height:75%">
+            <img class="mySlides-adorabilis" src="images/cat.png" style="height:75%">
+            <img class="mySlides-adorabilis" src="images/catloffin.jpg" style="height:75%">
+            <img class="mySlides-adorabilis" src="images/frilledlizard.jpg" style="height:75%">
             
-            <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="button-right" onclick="plusDivs(1)">&#10095;</button>
-            <button onclick="off()">X</button>
+            <button class="button-left" onclick="plusDivsAdorabilis(-1)">&#10094;</button>
+            <button class="button-right" onclick="plusDivsAdorabilis(1)">&#10095;</button>
+            <button onclick="offAdorabilis()">X</button>
+        </div>
+
+        <div id="overlay-shark">
+            <img class="mySlides-shark" src="images/ferdelance.jpg" style="height:75%">
+            <img class="mySlides-shark" src="images/whale.png" style="height:75%">
+            <img class="mySlides-shark" src="images/goldenonrock.jpg" style="height:75%">
+            <img class="mySlides-shark" src="images/penguin.jpg" style="height:75%">
+            
+            <button class="button-left" onclick="plusDivsShark(-1)">&#10094;</button>
+            <button class="button-right" onclick="plusDivsShark(1)">&#10095;</button>
+            <button onclick="offShark()">X</button>
+        </div>
+
+        <div id="overlay-blob">
+            <img class="mySlides-blob" src="images/laineycat.jpg" style="height:75%">
+            <img class="mySlides-blob" src="images/chinchilla.jpg" style="height:75%">
+            <img class="mySlides-blob" src="images/ferdelance.jpg" style="height:75%">
+            <img class="mySlides-blob" src="images/catloffin.jpg" style="height:75%">
+            
+            <button class="button-left" onclick="plusDivsBlob(-1)">&#10094;</button>
+            <button class="button-right" onclick="plusDivsBlob(1)">&#10095;</button>
+            <button onclick="offBlob()">X</button>
         </div>
         
             <img src="images/teamlogo.jpg" id="team-logo">
@@ -56,7 +78,7 @@
                         <th colspan="2" id="content-header">Rank #1: Adorabilis <br><br></th>
                     </tr>
                     <tr>
-                        <td><img src="images/adorabilis.png" id="animal-image"><button onclick="on()">More Images</button></td>
+                        <td><img src="images/adorabilis.png" id="animal-image"><button onclick="onAdorabilis()">More Images</button></td>
                         <td id="animal-ranking">These small octopi rest at a length of less than 20cm. They are a red/pink color that looks orange in most pictures and 
                             their fins are the shape of ears that sit across their mantel. They are a round shape, much like a rubber ball. They also live deep in the ocean, 
                             meaning their isn't much knowledge on them. These are a recently discovered species.
@@ -70,7 +92,7 @@
                         <th colspan="2" id="content-header">Rank #2: Hammerhead Shark <br><br></th>
                     </tr>
                     <tr>
-                        <td><img src="images/shark.png" id="animal-image"><button onclick="on()">More Images</button></td>
+                        <td><img src="images/shark.png" id="animal-image"><button onclick="onShark()">More Images</button></td>
                         <td id="animal-ranking">Hammerhead sharks are apex predators, averaging about 20 feet long. They eat their prey along the seafloors, like stingray. 
                             They are also very vulnerable to overfishing.
                         </td>
@@ -83,7 +105,7 @@
                         <th colspan="2" id="content-header">Rank #3: Blobfish <br><br></th>
                     </tr>
                     <tr>
-                        <td><img src="images/blobfish.png" id="animal-image"></td>
+                        <td><img src="images/blobfish.png" id="animal-image"><button onclick="onBlob()">More Images</button></td>
                         <td id="animal-ranking">Blobfish are not very active fish that live 4000 meters deep in the ocean. They have no muscles or bones due to the pressure 
                             of the water. 
                         </td>
@@ -94,14 +116,14 @@
             </div>
         
         <script>
-            function on(){
-                document.getElementById("overlay").style.backgroundColor = "rgba(0,0,0,0.5)";
-                document.getElementById("overlay").style.width = "100%";
-                document.getElementById("overlay").style.height = "60%";
-                document.getElementById("overlay").style.position = "fixed";
-                document.getElementById("overlay").style.top = "100px";
-                document.getElementById("overlay").style.zIndex = "2";
-                document.getElementById("overlay").style.display = "block";
+            function onAdorabilis(){
+                document.getElementById("overlay-adorabilis").style.backgroundColor = "rgba(0,0,0,0.5)";
+                document.getElementById("overlay-adorabilis").style.width = "100%";
+                document.getElementById("overlay-adorabilis").style.height = "60%";
+                document.getElementById("overlay-adorabilis").style.position = "fixed";
+                document.getElementById("overlay-adorabilis").style.top = "100px";
+                document.getElementById("overlay-adorabilis").style.zIndex = "2";
+                document.getElementById("overlay-adorabilis").style.display = "block";
 
                 document.getElementById("navigation").style.position= "fixed";
                 document.getElementById("navigation").style.top= "154px";
@@ -109,8 +131,56 @@
                 document.getElementById("links").style.position= "fixed";
                 document.getElementById("links").style.top= "495px";
             }
-            function off(){
-                document.getElementById("overlay").style.display = "none";
+            function offAdorabilis(){
+                document.getElementById("overlay-adorabilis").style.display = "none";
+
+                document.getElementById("navigation").style.position= "static";
+                document.getElementById("navigation").style.top= "0";
+
+                document.getElementById("links").style.position= "static";
+                document.getElementById("links").style.top= "0";
+            }
+            function onShark(){
+                document.getElementById("overlay-shark").style.backgroundColor = "rgba(0,0,0,0.5)";
+                document.getElementById("overlay-shark").style.width = "100%";
+                document.getElementById("overlay-shark").style.height = "60%";
+                document.getElementById("overlay-shark").style.position = "fixed";
+                document.getElementById("overlay-shark").style.top = "100px";
+                document.getElementById("overlay-shark").style.zIndex = "2";
+                document.getElementById("overlay-shark").style.display = "block";
+
+                document.getElementById("navigation").style.position= "fixed";
+                document.getElementById("navigation").style.top= "154px";
+
+                document.getElementById("links").style.position= "fixed";
+                document.getElementById("links").style.top= "495px";
+            }
+            function offShark(){
+                document.getElementById("overlay-shark").style.display = "none";
+
+                document.getElementById("navigation").style.position= "static";
+                document.getElementById("navigation").style.top= "0";
+
+                document.getElementById("links").style.position= "static";
+                document.getElementById("links").style.top= "0";
+            }
+            function onBlob(){
+                document.getElementById("overlay-blob").style.backgroundColor = "rgba(0,0,0,0.5)";
+                document.getElementById("overlay-blob").style.width = "100%";
+                document.getElementById("overlay-blob").style.height = "60%";
+                document.getElementById("overlay-blob").style.position = "fixed";
+                document.getElementById("overlay-blob").style.top = "100px";
+                document.getElementById("overlay-blob").style.zIndex = "2";
+                document.getElementById("overlay-blob").style.display = "block";
+
+                document.getElementById("navigation").style.position= "fixed";
+                document.getElementById("navigation").style.top= "154px";
+
+                document.getElementById("links").style.position= "fixed";
+                document.getElementById("links").style.top= "495px";
+            }
+            function offBlob(){
+                document.getElementById("overlay-blob").style.display = "none";
 
                 document.getElementById("navigation").style.position= "static";
                 document.getElementById("navigation").style.top= "0";
@@ -119,15 +189,49 @@
                 document.getElementById("links").style.top= "0";
             }
             var slideIndex = 1;
-            showDivs(slideIndex);
+            showDivsAdorabilis(slideIndex);
 
-            function plusDivs(n) {
-                showDivs(slideIndex += n);
+            function plusDivsAdorabilis(n) {
+                showDivsAdorabilis(slideIndex += n);
             }
 
-            function showDivs(n) {
+            function showDivsAdorabilis(n) {
             var i;
-            var x = document.getElementsByClassName("mySlides");
+            var x = document.getElementsByClassName("mySlides-adorabilis");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+            }
+
+            showDivsShark(slideIndex);
+
+            function plusDivsShark(n) {
+                showDivsShark(slideIndex += n);
+            }
+
+            function showDivsShark(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides-shark");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+            }
+
+            showDivsBlob(slideIndex);
+
+            function plusDivsBlob(n) {
+                showDivsBlob(slideIndex += n);
+            }
+
+            function showDivsBlob(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides-blob");
             if (n > x.length) {slideIndex = 1}
             if (n < 1) {slideIndex = x.length}
             for (i = 0; i < x.length; i++) {

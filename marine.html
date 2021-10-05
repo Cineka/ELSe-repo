@@ -4,15 +4,17 @@
         <link rel="stylesheet" href="scripts/CSS/style.css">
     </head>
     <body id="home">
-        <div id="overlay" onclick="off()">
-            <img class="mySlides" src="images/adorabilis.png" style="width:35%">
-            <img class="mySlides" src="images/cat.png" style="width:35%">
-            <img class="mySlides" src="images/catloffin.jpg" style="width:35%">
-            <img class="mySlides" src="images/frilledlizard.jpg" style="width:35%">
+        <div id="overlay">
+            <img class="mySlides" src="images/adorabilis.png" style="height:75%">
+            <img class="mySlides" src="images/cat.png" style="height:75%">
+            <img class="mySlides" src="images/catloffin.jpg" style="height:75%">
+            <img class="mySlides" src="images/frilledlizard.jpg" style="height:75%">
             
             <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
             <button class="button-right" onclick="plusDivs(1)">&#10095;</button>
+            <button onclick="off()">X</button>
         </div>
+        
             <img src="images/teamlogo.jpg" id="team-logo">
             <div id="title">
             <center><h1 id="head">Marine Animals</h1></center>
@@ -95,32 +97,44 @@
             function on(){
                 document.getElementById("overlay").style.backgroundColor = "rgba(0,0,0,0.5)";
                 document.getElementById("overlay").style.width = "100%";
-                document.getElementById("overlay").style.height = "100%";
-                document.getElementById("overlay").style.position = "sticky";
-                document.getElementById("overlay").style.top = "0";
-                //document.getElementById("overlay").style.left = "0";
-                //document.getElementById("overlay").style.right = "0";
-                //document.getElementById("overlay").style.bottom = "0";
+                document.getElementById("overlay").style.height = "60%";
+                document.getElementById("overlay").style.position = "fixed";
+                document.getElementById("overlay").style.top = "100px";
                 document.getElementById("overlay").style.zIndex = "2";
                 document.getElementById("overlay").style.display = "block";
+
+                document.getElementById("navigation").style.position= "fixed";
+                document.getElementById("navigation").style.top= "154px";
+
+                document.getElementById("links").style.position= "fixed";
+                document.getElementById("links").style.top= "495px";
+            }
+            function off(){
+                document.getElementById("overlay").style.display = "none";
+
+                document.getElementById("navigation").style.position= "static";
+                document.getElementById("navigation").style.top= "0";
+
+                document.getElementById("links").style.position= "static";
+                document.getElementById("links").style.top= "0";
             }
             var slideIndex = 1;
-showDivs(slideIndex);
+            showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
+            function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+            }
         </script>
     </body>
 </html>

@@ -14,6 +14,33 @@
 #overlay-blob{
     display: none;
 }
+#overlay-newt{
+    display: none;
+}
+#overlay-dragon{
+    display: none;
+}
+#overlay-snake{
+    display: none;
+}
+#overlay-chin{
+    display: none;
+}
+#overlay-monkey{
+    display: none;
+}
+#overlay-whale{
+    display: none;
+}
+#overlay-dog{
+    display: none;
+}
+#overlay-parrotlet{
+    display: none;
+}
+#overlay-cat{
+    display: none;
+}
 #button-left{
     margin-left: auto;
     margin-right: auto;

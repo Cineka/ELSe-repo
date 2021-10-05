@@ -4,6 +4,33 @@
         <link rel="stylesheet" href="scripts/CSS/style.css">
     </head>
     <body id="home">
+        <div id="overlay-newt">
+            <img class="mySlides-newt" src="images/newt.png" style="height:75%">
+            <img class="mySlides-newt" src="images/newtblack.png" style="height:75%">
+            <img class="mySlides-newt" src="images/newtskissing.jpg" style="height:75%">
+            
+            <button class="button-left" onclick="plusDivsNewt(-1)">&#10094;</button>
+            <button class="button-right" onclick="plusDivsNewt(1)">&#10095;</button>
+            <button onclick="offNewt()">X</button>
+        </div>
+        <div id="overlay-dragon">
+            <img class="mySlides-dragon" src="images/beardeddragon.png" style="height:75%">
+            <img class="mySlides-dragon" src="images/beardedmom.png" style="height:75%">
+            <img class="mySlides-dragon" src="images/beardedhat.jpg" style="height:75%">
+            
+            <button class="button-left" onclick="plusDivsDragon(-1)">&#10094;</button>
+            <button class="button-right" onclick="plusDivsDragon(1)">&#10095;</button>
+            <button onclick="offDragon()">X</button>
+        </div>
+        <div id="overlay-snake">
+            <img class="mySlides-snake" src="images/snake.png" style="height:75%">
+            <img class="mySlides-snake" src="images/snakeinhand.jpg" style="height:75%">
+            <img class="mySlides-snake" src="images/snakeface.png" style="height:75%">
+            
+            <button class="button-left" onclick="plusDivsSnake(-1)">&#10094;</button>
+            <button class="button-right" onclick="plusDivsSnake(1)">&#10095;</button>
+            <button onclick="offSnake()">X</button>
+        </div>
         <img src="images/teamlogo.jpg" id="team-logo">
         <div id="title">
            <center><h1 id="head">Reptiles</h1></center>
@@ -45,7 +72,7 @@
                     <th colspan="2" id="content-header">Rank #1: Newts <br><br></th>
                 </tr>
                 <tr>
-                    <td><img src="images/newt.png" id="animal-image"></td>
+                    <td><img src="images/newt.png" id="animal-image"><button onclick="onNewt()">More Images</button></td>
                     <td id="animal-ranking">Newts are tiny lizards that are known to be less than 20cm. They are found in the eastern US and are very colorful. 
                         Many have the ability to regenerate their limbs and they produce toxins from their skin to protect themselves from predators. They are 
                         also carnivores, eating insects and other smaller diets. 
@@ -59,7 +86,7 @@
                     <th colspan="2" id="content-header">Rank #2: Bearded Dragon <br><br></th>
                 </tr>
                 <tr>
-                    <td><img src="images/beardeddragon.png" id="animal-image"></td>
+                    <td><img src="images/beardeddragon.png" id="animal-image"><button onclick="onDragon()">More Images</button></td>
                     <td id="animal-ranking">Bearded dragons are very common pets due to their easy-going and relaxed nature. They are also omnivores, eating a variety of 
                         foods, including crickets. They also are known to wave their hands as a sign of submission and bob their heads towards potential mates. They live up 
                         to ten years and are more solitary animals. They also hiss when frightened.
@@ -73,7 +100,7 @@
                     <th colspan="2" id="content-header">Rank #3: Corn Snake <br><br></th>
                 </tr>
                 <tr>
-                    <td><img src="images/snake.png" id="animal-image"></td>
+                    <td><img src="images/snake.png" id="animal-image"><button onclick="onSnake()">More Images</button></td>
                     <td id="animal-ranking">Corn snakes are also common pets in the snake world. They have a second name called the red rat snake and are nonvenomous snakes. 
                         They have red eyes and are diurnal (awake during the day). They have the issue of being mistaken for copperheads, a very venomous snake, and are considered 
                         constrictors, like boa constrictors.
@@ -83,5 +110,131 @@
                 <tr><td colspan="2" id="animal-ranking"> </td></tr>
             </table>
         </div>
+        <script>
+            function onNewt(){
+                document.getElementById("overlay-newt").style.backgroundColor = "rgba(0,0,0,0.5)";
+                document.getElementById("overlay-newt").style.width = "100%";
+                document.getElementById("overlay-newt").style.height = "60%";
+                document.getElementById("overlay-newt").style.position = "fixed";
+                document.getElementById("overlay-newt").style.top = "100px";
+                document.getElementById("overlay-newt").style.zIndex = "2";
+                document.getElementById("overlay-newt").style.display = "block";
+
+                document.getElementById("navigation").style.position= "absolute";
+                document.getElementById("navigation").style.top= "154px";
+
+                document.getElementById("links").style.position= "absolute";
+                document.getElementById("links").style.top= "495px";
+            }
+            function offNewt(){
+                document.getElementById("overlay-newt").style.display = "none";
+
+                document.getElementById("navigation").style.position= "static";
+                document.getElementById("navigation").style.top= "0";
+
+                document.getElementById("links").style.position= "static";
+                document.getElementById("links").style.top= "0";
+            }
+            var slideIndex = 1;
+            showDivsNewt(slideIndex);
+
+            function plusDivsNewt(n) {
+                showDivsNewt(slideIndex += n);
+            }
+
+            function showDivsNewt(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides-newt");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+            }
+
+
+            function onDragon(){
+                document.getElementById("overlay-dragon").style.backgroundColor = "rgba(0,0,0,0.5)";
+                document.getElementById("overlay-dragon").style.width = "100%";
+                document.getElementById("overlay-dragon").style.height = "60%";
+                document.getElementById("overlay-dragon").style.position = "fixed";
+                document.getElementById("overlay-dragon").style.top = "100px";
+                document.getElementById("overlay-dragon").style.zIndex = "2";
+                document.getElementById("overlay-dragon").style.display = "block";
+
+                document.getElementById("navigation").style.position= "absolute";
+                document.getElementById("navigation").style.top= "154px";
+
+                document.getElementById("links").style.position= "absolute";
+                document.getElementById("links").style.top= "495px";
+            }
+            function offDragon(){
+                document.getElementById("overlay-dragon").style.display = "none";
+
+                document.getElementById("navigation").style.position= "static";
+                document.getElementById("navigation").style.top= "0";
+
+                document.getElementById("links").style.position= "static";
+                document.getElementById("links").style.top= "0";
+            }
+            showDivsDragon(slideIndex);
+
+            function plusDivsDragon(n) {
+                showDivsDragon(slideIndex += n);
+            }
+
+            function showDivsDragon(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides-dragon");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+            }
+
+            function onSnake(){
+                document.getElementById("overlay-snake").style.backgroundColor = "rgba(0,0,0,0.5)";
+                document.getElementById("overlay-snake").style.width = "100%";
+                document.getElementById("overlay-snake").style.height = "60%";
+                document.getElementById("overlay-snake").style.position = "fixed";
+                document.getElementById("overlay-snake").style.top = "100px";
+                document.getElementById("overlay-snake").style.zIndex = "2";
+                document.getElementById("overlay-snake").style.display = "block";
+
+                document.getElementById("navigation").style.position= "absolute";
+                document.getElementById("navigation").style.top= "154px";
+
+                document.getElementById("links").style.position= "absolute";
+                document.getElementById("links").style.top= "495px";
+            }
+            function offSnake(){
+                document.getElementById("overlay-snake").style.display = "none";
+
+                document.getElementById("navigation").style.position= "static";
+                document.getElementById("navigation").style.top= "0";
+
+                document.getElementById("links").style.position= "static";
+                document.getElementById("links").style.top= "0";
+            }
+            showDivsSnake(slideIndex);
+
+            function plusDivsSnake(n) {
+                showDivsSnake(slideIndex += n);
+            }
+
+            function showDivsSnake(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides-snake");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+            }
+        </script>
     </body>
 </html>
